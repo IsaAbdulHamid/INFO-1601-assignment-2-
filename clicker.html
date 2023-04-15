@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Catcha! | Cat Coin Clicker</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="style_click.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="writecoins()">
+  <header>
+    <h1>
+      <a href="landing.html" style="text-decoration: none;">
+        <img src="assets/header.png">
+      </a>
+    </h1>
+  </header>
+
+  <div id="menu">
+    <div class="icon-bar" id="menu">
+      <a href="index.html"><i class="fa fa-paw">Adopt</i></a>
+      <a href="collection.html" style="text-decoration: none;"><i class="fa fa-id-badge"></i>Collection</a>
+      <a class="active" href="clicker.html" style="text-decoration: none;"><i
+          class="fa fa-mouse-pointer"></i>Clicker</a>
+    </div>
+
+    <div id="cat-coins">
+      <img id="cat-coins-img" src="assets/cat_coins.png" width="50px" height="30px">
+      <div id="cat-coins-count"></div>
+    </div>
+  </div>
+
+  <main>
+    <h1 class="glow">Click The Cat To Get Coins!</h1>
+    <input type="image" src="assets/Button2.jpeg" draggable="false" (dragstart)="false;" class="click-button"
+      onclick="countClicks()">
+    <p id="clicker-info"></p>
+    <div class="number-container"></div>
+    </div>
+    <br><br><br>
+
+
+  </main>
+
+  <!--Scroll To Top Button-->
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="arrow up"></i></button>
+
+  <footer>
+    <a href="https://www.pexels.com">Photos provided by Pexels</a>
+    <br>
+    <a href="aboutus.html" style="color: #2196F3;"> About Us</a>
+  </footer>
+
+
+
+  <script src="script_click.js"></script>
+
+</body>
+
+</html>

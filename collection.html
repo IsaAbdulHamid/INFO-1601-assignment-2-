@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Catcha! | Collection</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="style_col.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="landing.html" style="text-decoration: none;">
+        <img src="assets/header.png">
+      </a>
+    </h1>
+  </header>
+
+  <div class="icon-bar" id="menu">
+    <a href="index.html"><i class="fa fa-paw">Adopt</i></a>
+    <a class="active" href="collection.html" style="text-decoration: none;"><i class="fa fa-id-badge"></i>Collection</a>
+    <a href="clicker.html" style="text-decoration: none;"><i class="fa fa-mouse-pointer"></i>Clicker</a>
+  </div>
+
+  <!--Draggable Cat-->
+  <div id="catdiv">
+    <img id="catdivheader" src="assets/meepmew.png" alt="Italian Trulli">
+    <span class="meow">meow.</span>
+  </div>
+
+
+  <!-- MAIN (Center website) -->
+  <div class="main">
+
+    <h2>Collection</h2>
+
+    <div id="filterBtnContainer">
+      <button class="filterbtn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="filterbtn" onclick="filterSelection('bronzeTier')"> Bronze</button>
+      <button class="filterbtn" onclick="filterSelection('silverTier')"> Silver</button>
+      <button class="filterbtn" onclick="filterSelection('goldTier')"> Gold</button>
+    </div>
+
+
+    <!--Card grids-->
+    <section id="cat-collection">
+    </section>
+  </div>
+
+
+  <!-- END MAIN -->
+  </div>
+
+  <!--COMING SOON
+  <div class="bgimg">
+    <div class="topleft">
+      <p>Logo</p>
+    </div>
+    <div class="middle">
+      <h1>COMING SOON</h1>
+      <hr>
+      <p id="demo"></p>
+    </div>
+    <div class="bottomleft">
+      <p>Some text</p>
+    </div>
+  </div>
+-->
+
+  <!--Scroll To Top Button-->
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="arrow up"></i></button>
+
+
+  <footer>
+    <a href="https://www.pexels.com">Photos provided by Pexels</a>
+    <br>
+    <a href="aboutus.html" style="color: #2196F3;"> About Us</a>
+  </footer>
+
+
+
+  <script src="script_col.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+/*Start of About us*/
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #000;
+  background-color: #37306B;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-1 {
+  background-image: url("https://media.tenor.com/M7b68FMAVeIAAAAM/cat-breakdancing-cat-breakdance.gif");
+  min-height: 100%;
+  background-size: contain;
+}
+
+.bgimg-2 {
+  background-image: url("https://cdn.discordapp.com/attachments/1055165743899086849/1096243596564377690/SPOILER_1650501450462.png");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("https://cdn.discordapp.com/attachments/1053667338920136727/1096245085831704677/0MbR4QN0HTBgPf1IXDOn-LePPAsWsgFrAgQqzHmDJxycKmRCXEBxlnpFh6CXfcH96QZogOD3f79Fee0UWdRR0v3P9qNUwlvWmoGyKpAz--Q_bdXSr0KRdAXqZtikTgbg9eYffpst3kbtF5NUQEJ3LJNSR1yN2sPk6enFR4Vs6RyHHWxqgcyWO3aAOSAKLiFzasxRHTgRxZoZCs_Q0_C2mocHtoeuNcii5oDQNS3jce8TfK5KzIYitwnOdunBhgT5OTHCmiiuE3Htnzf23rdtDuAOXiQZrJPwR2wV22D25FwBvX9XNwiAN3e1FKoi7AkWgoXw9DjG2gLKjx7JbTGpKsRKdsHtzmYAjSNocQTrNMsE3JOcDNr9XiRAHG3gh_phcWSj445rkjVYkKt7yzKIrjxg_-yZ64P78gq36wohjT7nYT9v6_n7VJ2yPxWL1Oux4kl0Ri9ZgSEqmCClG38Nfiw-XJi4NUhzpPUoBEzIhIb1QS_oCqMmbpHC2Wko..png");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("https://cdn.discordapp.com/attachments/1016790223964885042/1095456145629532160/image.png");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+/*Demo*/
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #2F58CD;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+}/*End of About us*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #a0c4ff;
+  text-align: center;
+}
+
+h1 {
+  color: #2F58CD;
+  font-size: 48px;
+  font-family: Arial, sans-serif;
+}
+
+h1 > a > img {
+  height: 20vh;
+}
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #37306B;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#topBtn:hover {
+  background-color: #555;
+}
+
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 50px; /* 16:9 Aspect Ratio */
+}
+
+/*Meet The Team*/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+  background-color: #000;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: #2F58CD;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #2F58CD;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+p{
+color: #2F58CD;
+}
+
+h2{
+color: #2F58CD;
+}

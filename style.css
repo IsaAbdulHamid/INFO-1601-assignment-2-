@@ -1,0 +1,390 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #a0c4ff;
+  text-align: center;
+}
+
+h1 {
+  color: #2F58CD;
+  font-size: 48px;
+  font-family: Arial, sans-serif;
+}
+
+h1 > a > img {
+  height: 20vh;
+}
+
+main {
+  background-color: #fdffb6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+}
+
+button {
+  background-color: #a0c4ff;
+  color: #ffffff;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  transition-property: background-color color;
+  transition-duration: 300ms;
+}
+
+.gimme:hover {
+  background-color: #04AA6D;
+  color: white;
+  transition: all 300ms;
+}
+
+.remaining:hover {
+  background: #2196F3;
+  color: white;
+  transition-property: background-color color;
+  transition: all 300ms;
+}
+
+.delete:hover {
+  background: #e60000;
+  color: black;
+  transition: all 300ms;
+  border-color: #b30000;
+}
+
+#card {
+  aspect-ratio: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 130%;
+  border-radius: 5%;
+  font-family: ui-rounded;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#cat-img{
+  box-sizing: content-box;
+  height: 60%;
+  width: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#card > p {
+  margin: 5px;
+  padding: 5px;
+  width: 90%;
+}
+
+
+/* Card classes */
+.bronze {
+  background-image: url("/assets/card_face_bronze.png");
+  color: white;
+}
+
+.silver {
+  background-image: url("/assets/card_face_silver.png");
+  color: rgb(92, 92, 92);
+  animation: silverglow 0.5s ease-in-out infinite alternate;
+}
+
+.gold {
+  background-image: url("/assets/card_face_gold.png");
+  color: white;
+  animation: goldglow 0.5s ease-in-out infinite alternate;
+}
+
+
+
+.cat-card {
+  background-color: ;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #CCC;
+  margin: 10px;
+  padding: 10px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cat-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+
+footer {
+  background-color: #ffc6ff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: #37306B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#cat-coins {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 0em;
+  background-color: #feecf9;
+  border-radius: 12px;
+  border: 2px solid #edafef;
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 18px;
+  /*box-shadow: 0 0 10px #bababa;*/
+}
+
+#cat-coins-count {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #f7bae8;
+  padding: 15px;
+  width: 40px;
+  text-align: center;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  padding: 12px 0;
+  z-index: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #37306B;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#topBtn:hover {
+  background-color: #555;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+@keyframes silverglow {
+  from {
+    box-shadow: 0 0 20px 8px #b5a6a6;
+  }
+
+  to {
+    box-shadow: 0 0 30px 14px #afc0b7;
+  }
+}
+
+@keyframes goldglow {
+  from {
+    box-shadow: 0 0 20px 8px #ddab22;
+  }
+
+  to {
+    box-shadow: 0 0 30px 14px #f5d538;
+  }
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.click-button {
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 60px;
+  margin: 4px 4px;
+  border-radius: 100%
+}
+
+button:hover {
+  opacity:1;
+}
+
+.number {
+  position: fixed;
+  animation: float 3s linear;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@keyframes float {
+  from {
+    bottom: 0;
+    opacity: 1;
+  }
+  to {
+    top: 0px;
+    bottom: 1000px;
+    opacity: 0;
+  }
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  background-color: #808080;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #808080;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
